@@ -47,3 +47,9 @@ docker exec -it laradock_workspace_1 php artisan key:generate
 docker exec -it laradock_workspace_1 php artisan migrate
 ```
 
+Отановить проект
+```
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+```
+

@@ -2,6 +2,31 @@
 
 ## OpenServer
 
+Разархивировать папку c проектом в OSPanel/domains
+открыть в терминале проект.
+запустить 
+```
+composer install
+npm i
+```
+
+Скопировать и сохранить файл env.example в .env
+Настроить подключение к БД в .env
+```
+DB_CONNECTION=pgsql
+DB_HOST=postgres
+DB_PORT=5432
+DB_DATABASE=postgres
+DB_USERNAME=postgres
+DB_PASSWORD=
+```
+
+Запустить запустить генерацию ключа и миграции
+```
+php artisan key:generate
+php artisan migrate
+```
+
 
 
 ## Docker
